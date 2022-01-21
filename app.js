@@ -29,7 +29,7 @@ app.use(express.static(path.resolve(__dirname, "public")));
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
-const url = "mongodb://localhost:27017/SampleDb";
+const url = "mongodb://localhost:27017/CompanyDb";
 
 let db;
 mongodb.MongoClient.connect(url, {
